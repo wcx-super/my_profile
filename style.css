@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    background-color: #f5efcd;
+}
+.cont {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.cont img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.first_hello{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    margin: 0;
+    transform: translateY(-50%);
+    color: transparent;
+    -webkit-text-stroke: 3px rgba(249, 247, 246, 0.9);
+    font-family: "Dancing Script", cursive;
+    font-weight: 700;
+    font-size: 15rem;
+    text-align: center;
+}
+.name{
+    position: absolute;
+    top:55%;
+    width: 100%;
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 3px rgba(249, 247, 246, 0.9);
+    font-family: "Dancing Script", cursive;
+    font-weight: 700;
+    margin: 0;
+    font-size: 5rem;
+}
+.profile-image{
+    height:30vh;
+    margin:20px auto;
+    display: block;
+    border-radius: 50%;
+    margin-top: 200px;
+}
+
+.introduction{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 100px auto;
+    width: 60%;
+}
+
+.dot-divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.dot-divider span {
+    margin-top: 350px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #d7a769;
+}
+
+.Skills{
+    color: #d7a769;
+    font-size: 3rem;
+    margin-top: 400px;
+    text-align: center;
+}
+
+li{
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+}
+
+ul{
+    width: fit-content;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 60px 48px;
+    width: min(1150px, 88%);
+    margin: 70px auto 0;
+}
+
+.feature-head {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 18px;
+}
+
+.feature-icon {
+    flex: 0 0 auto;
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background-color: #2f2b26;
+    color: #f5efcd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-icon svg {
+    width: 28px;
+    height: 28px;
+}
+
+.feature-title {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #2f2b26;
+    line-height: 1.1;
+}
+
+.feature-text {
+    margin: 0;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: #0b0b0b;
+}
+
+@media (max-width: 600px) {
+    .feature-title {
+        font-size: 1.6rem;
+    }
+}
+
+.Gas {
+    font-size: 1.7rem;
+}
