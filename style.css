@@ -1,0 +1,246 @@
+body {
+    margin: 0;
+    background-color: #f5efcd;
+}
+.cont {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.cont img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.first_hello{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    margin: 0;
+    transform: translateY(-50%);
+    color: transparent;
+    -webkit-text-stroke: 3px rgba(249, 247, 246, 0.9);
+    font-family: "Dancing Script", cursive;
+    font-weight: 700;
+    font-size: 15rem;
+    text-align: center;
+}
+.name{
+    position: absolute;
+    top:55%;
+    width: 100%;
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 3px rgba(249, 247, 246, 0.9);
+    font-family: "Dancing Script", cursive;
+    font-weight: 700;
+    margin: 0;
+    font-size: 5rem;
+}
+.profile-image{
+    height:30vh;
+    margin:20px auto;
+    display: block;
+    border-radius: 50%;
+    margin-top: 200px;
+}
+
+.introduction{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 100px auto;
+    width: 60%;
+}
+
+.dot-divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.dot-divider span {
+    margin-top: 350px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #d7a769;
+}
+
+.Skills{
+    color: #d7a769;
+    font-size: 3rem;
+    margin-top: 400px;
+    text-align: center;
+}
+
+li{
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+}
+
+ul{
+    width: fit-content;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 32px;
+    width: min(1150px, 88%);
+    margin: 56px auto 0;
+}
+
+.feature-card {
+    background-color: #fbf7e4;
+    border: 1px solid #e3d4a9;
+    border-radius: 18px;
+    padding: 34px 32px;
+    box-shadow: 0 14px 34px rgba(47, 43, 38, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 40px rgba(47, 43, 38, 0.14);
+}
+
+.feature-head {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.feature-icon {
+    flex: 0 0 auto;
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background-color: #2f2b26;
+    color: #f5efcd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-icon svg {
+    width: 26px;
+    height: 26px;
+}
+
+.feature-title {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #2f2b26;
+    line-height: 1.2;
+}
+
+.feature-text {
+    margin: 0;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #4a443c;
+}
+
+@media (max-width: 600px) {
+    .feature-card {
+        padding: 26px 22px;
+    }
+
+    .feature-title {
+        font-size: 1.35rem;
+    }
+}
+
+.Project_title {
+    font-size: 1.7rem;
+}
+
+.project-section {
+    width: min(1150px, 88%);
+    margin: 0 auto;
+    padding: 0 8px;
+    box-sizing: border-box;
+}
+
+.project-section hr {
+    border: none;
+    border-top: 1px solid #d7a769;
+    margin: 32px 0;
+}
+
+.project-card {
+    background-color: #fbf7e4;
+    border: 1px solid #e3d4a9;
+    border-radius: 18px;
+    padding: 40px 44px;
+    margin-top: 70px;
+    box-shadow: 0 14px 34px rgba(47, 43, 38, 0.08);
+}
+
+.project-head {
+    display: flex;
+    align-items: baseline;
+    gap: 18px;
+    margin-bottom: 18px;
+}
+
+.project-number {
+    font-family: "Dancing Script", cursive;
+    font-size: 2.6rem;
+    line-height: 1;
+    color: #d7a769;
+}
+
+.project-name {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #2f2b26;
+    line-height: 1.2;
+}
+
+.project-desc {
+    margin: 0 0 32px;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: #0b0b0b;
+}
+
+.project-media {
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #2f2b26;
+    line-height: 0;
+}
+
+.project-video,
+.project-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    .project-card {
+        padding: 28px 22px;
+    }
+
+    .project-name {
+        font-size: 1.6rem;
+    }
+}
+
+footer {
+    text-align: left;
+    padding: 8px 16px 40px 0;
+}
+
+footer p {
+    margin: 0;
+}
