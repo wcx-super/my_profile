@@ -244,3 +244,40 @@ footer {
 footer p {
     margin: 0;
 }
+.project-section {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* 每行 2 张，等宽 */
+    gap: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
+    min-width: 0;          /* 关键：不让内容撑宽卡片 */
+    width: auto;
+    box-sizing: border-box;
+}
+
+.project-media {
+    width: 100%;
+    aspect-ratio: 16 / 9;  /* 媒体区域高度也统一 */
+    overflow: hidden;
+    border-radius: 8px;
+    background: #000;
+}
+
+.project-video,
+.project-image {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* 手机上变成一列 */
+@media (max-width: 768px) {
+    .project-section {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
